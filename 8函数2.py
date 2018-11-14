@@ -45,3 +45,7 @@ def person2(name, age, *, city, job):
 
 #调用方法
 person2('Jack', 24, city='Beijing', job='Engineer')
+
+#如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符*了：
+def person3(name, age, *args, city, job):
+    print(name, age, args, city, job)
