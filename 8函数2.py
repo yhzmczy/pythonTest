@@ -38,3 +38,10 @@ person('Adam', 45, gender='M', job='Engineer')
 #另一种玩法
 extra = {'city': 'Beijing', 'job': 'Engineer'}
 person('Jack', 24, **extra)
+
+#限制关键字参数的名字
+def person2(name, age, *, city, job):
+    print(name, age, city, job)
+
+#调用方法
+person2('Jack', 24, city='Beijing', job='Engineer')
