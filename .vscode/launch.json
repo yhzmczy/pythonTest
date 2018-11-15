@@ -5,20 +5,19 @@
     "version": "0.2.0",
     "configurations": [
 
-        {
-            //注意，这里是自己配置的
-            "name": "Python",
-            "type": "python",
-            "request": "launch",
-            "stopOnEntry": false,
-            "pythonPath": "C:/Users/czy/AppData/Local/Programs/Python/Python37/python.exe",
-            "program": "${file}",
-            "cwd": "${workspaceRoot}",
-            "env": {},
-            "envFile": "${workspaceRoot}/.env",
-            
-            
-        },
+        // {
+        //     //注意，这里是自己配置的
+        //     "name": "Python",
+        //     "type": "python",
+        //     "request": "launch",
+        //     "stopOnEntry": false,
+        //     "pythonPath": "C:/Users/czy/AppData/Local/Programs/Python/Python37/python.exe",
+        //     "program": "${file}",
+        //     "cwd": "${workspaceRoot}",
+        //     "env": {},
+        //     "envFile": "${workspaceRoot}/.env",
+             
+        // },
         {
             "name": "Python: Current File (Integrated Terminal)",
             "type": "python",
