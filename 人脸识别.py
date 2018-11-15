@@ -4,6 +4,7 @@ import cv2
 
 filename = "1.jpg"
 
+
 def detect(filename):
     #haarcascade_frontalface_default.xml存储在package安装的位置
     #face_cascade = cv2.CascadeClassifier("C:\\Users\\czy\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
@@ -15,7 +16,8 @@ def detect(filename):
     #检测结果返回人脸矩形数组
     faces = face_cascade.detectMultiScale(gray, 1.3, 5)
     for (x, y, w, h) in faces:
-        img = cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        #img = cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 0), 2)
+        img = cv2.circle(img,(x+w//2,y+h//2),w//2,(255, 0, 0), 2)
         cv2.namedWindow("Human Face Result!")
         cv2.imshow("Human Face Result!", img)
         cv2.imwrite("images/Face.jpg", img)
