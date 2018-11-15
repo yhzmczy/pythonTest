@@ -4,7 +4,6 @@ import cv2
 
 filename = "1.jpg"
 
-
 def detect(filename):
     #haarcascade_frontalface_default.xml存储在package安装的位置
     #face_cascade = cv2.CascadeClassifier("C:\\Users\\czy\\AppData\\Local\\Programs\\Python\\Python37\\Lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml")
@@ -23,5 +22,6 @@ def detect(filename):
         cv2.imwrite("images/Face.jpg", img)
         cv2.waitKey(0)
         cv2.destroyAllWindows()
+        
 
 detect(filename)
